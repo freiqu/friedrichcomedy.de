@@ -1,10 +1,9 @@
 import { createApp } from "vue";
 import App from "./App.vue";
-import "vuetify/styles/main.css";
-import * as components from "vuetify/components";
-import * as directives from "vuetify/directives";
-import { createVuetify } from "vuetify";
+import i18n from "./lib/i18n";
+import vuetify from "./lib/vuetify";
 
-const vuetify = createVuetify({ components, directives });
-
-createApp(App).use(vuetify).mount("#app");
+const app = createApp(App);
+app.use(vuetify);
+app.use(i18n);
+app.mount("#app");
