@@ -1,5 +1,9 @@
 {
+  "common": {
+    "email": "Email"
+  },
   "main": {
-    "appTitle": "App Title"
+    "description": "Hi, my name is Friedrich and I am a amateur comedian",
+    "socials": "Socials"
   }
 }
