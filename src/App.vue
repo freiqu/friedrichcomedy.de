@@ -13,7 +13,7 @@ import links from "./content/links.ts";
       <h1>Friedrich</h1>
     </FlexRow>
     <FlexRow>
-      <span>
+      <span class="text-center flex flex-shrink-1 mr-3 ml-3">
         {{ $t('main.description') }}
       </span>
     </FlexRow>
