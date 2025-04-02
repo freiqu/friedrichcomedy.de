@@ -5,15 +5,15 @@ import {useI18n} from "vue-i18n";
 const { t } = useI18n()
 
 const links = [{
-  icon: 'pi-instagram',
+  icon: 'pi pi-instagram',
   link: 'https://www.instagram.com/friedrich.comedy',
   name: 'Instagram'
 },{
-  icon: 'pi-youtube',
+  icon: 'pi pi-youtube',
   link: 'https://www.youtube.com/@friedrich.comedy',
   name: 'Youtube'
 },{
-  icon: 'pi-at',
+  icon: 'pi pi-at',
   link: 'mailto:contact@yourfat.mom',
   name: t('common.email')
 }]
@@ -37,7 +37,7 @@ const links = [{
         <template #content>
           <div class="flex flex-wrap gap-2 justify-content-center">
             <a v-for="link in links" :key="`link.${link.name}`" target="_blank" :href="link.link">
-              <Button variant="text" :icon="link.icon" :v-tooltip="link.name"></Button>
+              <Button variant="text" :icon="link.icon" v-tooltip.top="link.name"></Button>
             </a>
           </div>
         </template>
