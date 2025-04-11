@@ -32,7 +32,9 @@ export default defineConfig([
       parser: tsParser,
     },
     rules: {
-      quotes: ['error', 'single'],
+      quotes: ['error', 'single', {
+        avoidEscape: true
+      }],
     },
   },
 ]);
