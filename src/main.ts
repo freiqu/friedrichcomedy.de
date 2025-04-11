@@ -1,6 +1,6 @@
-import { createApp } from "vue";
-import App from "./App.vue";
-import i18n from "./lib/i18n";
+import { createApp } from 'vue';
+import App from './App.vue';
+import i18n from './lib/i18n';
 import PrimeVue from 'primevue/config';
 import Aura from '@primeuix/themes/aura';
 import 'primeicons/primeicons.css'
@@ -17,4 +17,4 @@ app.use(PrimeVue, {
 });
 app.use(i18n);
 app.directive('tooltip', Tooltip);
-app.mount("#app");
+app.mount('#app');

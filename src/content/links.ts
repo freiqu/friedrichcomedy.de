@@ -21,7 +21,7 @@ export default [
   },
   {
     icon: 'pi pi-at',
-    link: 'mailto:contact@yourfat.mom',
+    link: 'mailto:contact@friedrichcomedy.de',
     name: 'common.email',
   },
 ];
